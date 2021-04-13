@@ -1,0 +1,126 @@
+// Collors
+$dark: #343a40;
+$white: #f2f2f2;
+$gray: #c4c4c4;
+$brand: #ff5e5e;
+
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 3.5),
+  7: ($spacer * 10),
+  8: ($spacer * 15),
+  9: ($spacer * 20),
+  10: ($spacer * 25),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Basics settigs
+* {
+font-family: Roboto;
+}
+h1 h2 h3 {
+color: $dark;
+}
+
+// Lists
+li {
+font-size: 20px;
+margin-top: 10px;
+}
+.commands {
+color: $dark;
+margin-left: 15px;
+}
+
+// Docs
+.doc {
+height: 80%;
+text-align: justify;
+}
+.doc__title {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.doc__h2 {
+margin-left: 20px;
+margin-top: 20px;
+padding-bottom: px;
+}
+.doc__h3 {
+padding-top: 15px;
+margin-bottom: 15px;
+padding-left: 30px;
+}
+.doc__text {
+margin-left: 40px;
+width: 100%;
+}
+.doc__links {
+margin-left: 50px;
+margin-bottom: 30px;
+list-style: none;
+font-size: 18px;
+font-weight: 500;
+}
+.doc__btn {
+margin-left: 40px;
+margin-bottom: 20px;
+}
+.doc__article {
+    width: 100%;
+    padding: 20px;
+}
+@include media-breakpoint-up(md) {
+    .doc__article  {
+      width: 75%;
+      background: blue
+  }
+}
+
+// Home
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.center__h1 {
+    display: flex;
+    padding-top: 20%;
+    padding-left: 2.5%;
+    height: 33.3vh;
+}
+.menu {
+    margin-top: 20px;
+    margin-right: 20px;
+    height: auto;
+    float: right;
+}
+.menu__options{
+    color: $gray
+}
+.menu__options:hover {
+    color: $dark
+}
+.github {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+// Menu
+.brand {
+margin-top: 20px;
+}
+.link {
+    text-decoration: none;
+    color: $gray;
+}
+.link:hover {
+    text-decoration: none;
+    color: $white
+}
