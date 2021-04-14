@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Container, Col, Row, Nav } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
@@ -17,6 +17,51 @@ function Brand() {
   )
 }
 
+function MenuHome() {
+  const [isMenu, setIsMenu] = useState(false);
+  const [isBtn, setIsBtn] = useState(true);
+
+  function openMenu() {
+      setIsMenu(true);
+      setIsBtn(false);
+  }
+
+  function closeMenu() {
+      setIsMenu(false);
+      setIsBtn(true);
+  }
+
+  return (
+    <Nav className="d-block sticky-top d-md-none zindex-fixed">
+        { isBtn &&
+            <Button className="bg-dark mt-2 mr-2 p-4 float-right" onClick={openMenu}></Button>
+        }
+        { isMenu &&
+        <>
+            <Button className="bg-white zindex-modal-backdrop mt-2 mr-2 p-4 float-right" onClick={closeMenu}></Button>
+            <Container className="bg-dark mr-3 zindex-sticky" style={{ width: "100%", height: "812px" }}>
+                <OptionsMobile />
+            </Container>
+        </>
+        }
+    </Nav>
+  )
+}
+
+function OptionsMobile() {
+  return (
+        <Container data-aos="fade-right" data-aos-duration="1600">
+          <div className="float-left mt-7" style={{ fontSize: "24px" }}>
+            <Link to="/introdution" className="link menu__options mt-4">About</Link><br/>
+            <Link to="/installation" className="link menu__options mt-4">Install</Link><br/>
+            <Link to="/docs" className="link menu__options mt-4">Docs</Link><br/>
+            <Link to="/installation"className="link menu__options mt-4">Download</Link><br/>
+            <a href="https://github.com/AlexNicolasCode/ENews-DiscordBot" className="link">GitHub</a>
+          </div>
+        </Container>
+  );
+}
+
 function Options() {
   return (
         <Nav className="d-none float-right mt-2 mr-2 d-md-block" data-aos="fade-right" data-aos-duration="1600">
@@ -28,17 +73,9 @@ function Options() {
   );
 }
 
-function MobileOptions() {
-  return (
-        <Nav className="float-right" data-aos="fade-right" data-aos-duration="1600">
-          <Button className="d-block h-50 bg-dark mt-2 mr-2 d-md-none" />
-        </Nav>
-  );
-}
-
 function GitHub() {
   return (
-    <a href="https://github.com/AlexNicolasCode/ENews-DiscordBot" className="link github ml-2">
+    <a href="https://github.com/AlexNicolasCode/ENews-DiscordBot" className="link github">
       <svg role="img" height="40px" viewBox="0 0 24 24" fill="#343a40" xmlns="http://www.w3.org/2000/svg" data-aos="fade-left" data-aos-duration="1600">
         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
         3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
@@ -61,13 +98,13 @@ export default function Home() {
   return (
     <>
       <GitHub />
-      <Options />
-      <MobileOptions />
+      <Options className="d-none d-md-block"/>
+      <MenuHome/>
       <Brand />
       <Container className="align-middle pt-8 align-middle" data-aos="fade-left" data-aos-duration="1600">
         <Row className="pt-4">
           <Col>
-            <h1><strong><span style={{ color: '#FF5E5E' }}>ENews</span></strong>: stay always <br />be <strong>informed</strong></h1>
+            <h1 className="pt-2"><strong><span style={{ color: '#FF5E5E' }}>ENews</span></strong>: stay always <br />be <strong>informed</strong></h1>
           </Col>
         </Row>
       </Container>

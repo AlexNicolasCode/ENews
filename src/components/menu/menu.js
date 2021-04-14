@@ -68,15 +68,15 @@ export default function Menu() {
         <>
             <Nav className="d-block sticky-top d-md-none zindex-fixed">
                 { isBtn &&
-                    <Button className="bg-dark mt-2 mr-4 p-4 float-right" onClick={openMenu}></Button>
+                    <Button className="bg-dark mt-2 mr-2 p-4 float-right" onClick={openMenu}></Button>
                 }
                 { isMenu &&
                 <>
-                    <Button className="bg-white zindex-modal-backdrop mt-2 mr-4 p-4 float-right" onClick={closeMenu}></Button>
-                    <Container className="bg-dark mr-3 zindex-sticky" style={{ width: "360px", height: "640px" }}>
-                        <div className="">
-                            <Sections/>
-                        </div>
+                    <Button className="bg-white zindex-modal-backdrop mt-2 mr-2 p-4 float-right" onClick={closeMenu}></Button>
+                    <Container className="bg-dark mr-3 zindex-sticky pt-7" style={{ width: "100%", height: "812px", fontSize: "24px" }}>
+                        <strong><Link to="/introdution" className="link">Introdution</Link></strong><br/>
+                        <strong><Link className="link" to="/installation">Installation</Link></strong><br/>
+                        <strong><Link className="link" to="/docs">Docs</Link></strong>
                     </Container>
                 </>
                 }

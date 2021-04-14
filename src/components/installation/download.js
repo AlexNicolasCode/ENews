@@ -23,11 +23,10 @@ export default function Download() {
                             For this tutorial, you need download a IDE (Integrated Development Environment). See some exemples that you can download:
                         </p>
                         <Col className="doc__links">
-                            <a>VS Code (recommended)</a><br />
-                            <a>IntelliJ IDEA</a><br />
-                            <a>PyCharm</a><br />
-                            <a>Atom</a><br />
-                            <a>WebStorm</a>
+                            <a href="https://code.visualstudio.com/Download">VS Code (recommended)</a><br />
+                            <a href="http://www.rj-texted.se/index.html">RJ TextEd</a><br />
+                            <a href="https://atom.io/">Atom</a><br />
+                            <a href="http://lighttable.com/">Light Table</a>
                         </Col>
                         <p className="doc__text">
                             For this tutorial, you need download a IDE (Integrated Development Environment). See some exemples that you can download:
