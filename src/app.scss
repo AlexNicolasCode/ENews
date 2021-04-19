@@ -4,6 +4,7 @@ $white: #f2f2f2;
 $gray: #c4c4c4;
 $brand: #ff5e5e;
 
+// Presets
 $spacer: 1rem;
 $spacers: (
   6: ($spacer * 3.5),
@@ -12,7 +13,6 @@ $spacers: (
   9: ($spacer * 20),
   10: ($spacer * 25),
 );
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Basics settigs
@@ -22,77 +22,80 @@ font-family: Roboto;
 h1 h2 h3 {
 color: $dark;
 }
+h2 {
+    padding-top: 30px;
+    width: 100%;
+}
+h3 {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+p {
+    width: 100%;
+}
 
 // Lists
 li {
-font-size: 20px;
-margin-top: 10px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 .commands {
-color: $dark;
-margin-left: 15px;
+    color: $dark;
+    margin-left: 15px;
 }
 
 // Docs
 .doc {
-height: 80%;
-text-align: justify;
+    height: 80%;
+    text-align: justify;
 }
 .doc__title {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-}
-.doc__h2 {
-margin-left: 20px;
-margin-top: 20px;
-padding-bottom: px;
-}
-.doc__h3 {
-padding-top: 15px;
-margin-bottom: 15px;
-padding-left: 30px;
-}
-.doc__text {
-margin-left: 40px;
-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 .doc__links {
-margin-left: 50px;
-margin-bottom: 30px;
-list-style: none;
-font-size: 18px;
-font-weight: 500;
+    font-weight: 500;
+    font-size: 18px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.doc__links:hover {
+    list-style: none;    
 }
 .doc__btn {
-margin-left: 40px;
-margin-bottom: 20px;
-}
-.doc__article {
-width: 100%;
-@media (min-width: 600px) {
-width: 200px;
-background-color:blue;
-}
+    margin-bottom: 20px;
 }
 .doc__introdution {
-width: 81%;
-@media (min-width: 640px) {
-width: 24.5%;
-}
+    width: 81%;
+    @media (min-width: 640px) {
+        width: 24.5%;
+    }
 }
 .doc__docs {
-width: 30%;
-@media (min-width: 640px) {
-width: 10.5%;
-}
+    width: 30%;
+    @media (min-width: 640px) {
+        width: 10.5%;
+    }
 }
 .doc__installation {
-width: 62%;
-@media (min-width: 640px) {
-width: 21.5%;
+    width: 62%;
+    @media (min-width: 640px) {
+        width: 21.5%;
+    }
 }
+.doc__img {
+    margin-bottom: 5px;
+    width: 95%;
+}
+
+// GitHub
+.github {
+    bottom: 10px;
+    position: fixed;
+    right: 10px;
 }
 
 // Home
@@ -110,32 +113,28 @@ width: 21.5%;
     height: 33.3vh;
 }
 .menu {
+    float: right;
     margin-top: 20px;
     margin-right: 20px;
     height: auto;
-    float: right;
 }
 .menu__options{
-    color: $gray
+    color: $gray;
 }
 .menu__options:hover {
-    color: $dark
-}
-.github {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+    color: $dark;
+    text-decoration: none;
 }
 
-// Menu
+
+// Menu for doc
 .brand {
-margin-top: 20px;
+    margin-top: 20px;
 }
 .link {
-    text-decoration: none;
     color: $gray;
 }
 .link:hover {
+    color: $white;
     text-decoration: none;
-    color: $white
 }
