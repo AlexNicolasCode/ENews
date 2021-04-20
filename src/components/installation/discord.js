@@ -21,7 +21,7 @@ export default function Discord() {
                         The firts step of this installation is create a account on Discord. If you already have a account, go to new step of intallation into Discord. Otherwise, <a href="https://discord.com">click here</a> and create your account.
                     </p>
                     <p>
-                        Then, join into Discord Developer page and click <strong>"New Application"</strong>. Now you will to choose a name to your Discord Aplication.
+                        Then, join into <a href="https://discord.com/developers/applications">Discord Developer</a> page and click <strong>"New Application"</strong>. Now you will to choose a name to your Discord Aplication.
                     </p>
                     <img  alt="new aplication" className="doc__img" src={aplication}/>
                     <p>
