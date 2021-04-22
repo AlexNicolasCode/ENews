@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ENews/static/css/main.19cb7a17.chunk.css",
-    "main.js": "/ENews/static/js/main.d1b88738.chunk.js",
-    "main.js.map": "/ENews/static/js/main.d1b88738.chunk.js.map",
-    "runtime-main.js": "/ENews/static/js/runtime-main.3210b826.js",
-    "runtime-main.js.map": "/ENews/static/js/runtime-main.3210b826.js.map",
-    "static/css/2.4c67b939.chunk.css": "/ENews/static/css/2.4c67b939.chunk.css",
-    "static/js/2.3d15c1f4.chunk.js": "/ENews/static/js/2.3d15c1f4.chunk.js",
-    "static/js/2.3d15c1f4.chunk.js.map": "/ENews/static/js/2.3d15c1f4.chunk.js.map",
-    "static/js/3.31e690a1.chunk.js": "/ENews/static/js/3.31e690a1.chunk.js",
-    "static/js/3.31e690a1.chunk.js.map": "/ENews/static/js/3.31e690a1.chunk.js.map",
+    "main.css": "/ENews/static/css/main.bf55e164.chunk.css",
+    "main.js": "/ENews/static/js/main.7ec60f9c.chunk.js",
+    "main.js.map": "/ENews/static/js/main.7ec60f9c.chunk.js.map",
+    "runtime-main.js": "/ENews/static/js/runtime-main.4e01add6.js",
+    "runtime-main.js.map": "/ENews/static/js/runtime-main.4e01add6.js.map",
+    "static/css/2.71614c6c.chunk.css": "/ENews/static/css/2.71614c6c.chunk.css",
+    "static/js/2.4d569604.chunk.js": "/ENews/static/js/2.4d569604.chunk.js",
+    "static/js/2.4d569604.chunk.js.map": "/ENews/static/js/2.4d569604.chunk.js.map",
+    "static/js/3.0d83ad82.chunk.js": "/ENews/static/js/3.0d83ad82.chunk.js",
+    "static/js/3.0d83ad82.chunk.js.map": "/ENews/static/js/3.0d83ad82.chunk.js.map",
     "index.html": "/ENews/index.html",
-    "static/css/2.4c67b939.chunk.css.map": "/ENews/static/css/2.4c67b939.chunk.css.map",
-    "static/css/main.19cb7a17.chunk.css.map": "/ENews/static/css/main.19cb7a17.chunk.css.map",
-    "static/js/2.3d15c1f4.chunk.js.LICENSE.txt": "/ENews/static/js/2.3d15c1f4.chunk.js.LICENSE.txt",
+    "static/css/2.71614c6c.chunk.css.map": "/ENews/static/css/2.71614c6c.chunk.css.map",
+    "static/css/main.bf55e164.chunk.css.map": "/ENews/static/css/main.bf55e164.chunk.css.map",
+    "static/js/2.4d569604.chunk.js.LICENSE.txt": "/ENews/static/js/2.4d569604.chunk.js.LICENSE.txt",
     "static/media/add_bot.eb552cd0.png": "/ENews/static/media/add_bot.eb552cd0.png",
     "static/media/bot_checked.d27dad85.png": "/ENews/static/media/bot_checked.d27dad85.png",
     "static/media/bot_permissions.86c22eb1.png": "/ENews/static/media/bot_permissions.86c22eb1.png",
@@ -28,10 +28,10 @@
     "static/media/username_newbot.604e35ec.png": "/ENews/static/media/username_newbot.604e35ec.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3210b826.js",
-    "static/css/2.4c67b939.chunk.css",
-    "static/js/2.3d15c1f4.chunk.js",
-    "static/css/main.19cb7a17.chunk.css",
-    "static/js/main.d1b88738.chunk.js"
+    "static/js/runtime-main.4e01add6.js",
+    "static/css/2.71614c6c.chunk.css",
+    "static/js/2.4d569604.chunk.js",
+    "static/css/main.bf55e164.chunk.css",
+    "static/js/main.7ec60f9c.chunk.js"
   ]
 }
