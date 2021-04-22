@@ -19,18 +19,22 @@ $spacers: (
 * {
 font-family: Roboto;
 }
+
 h1 h2 h3 {
 color: $dark;
 }
+
 h2 {
     padding-top: 30px;
     width: 100%;
 }
+
 h3 {
     padding-top: 15px;
     padding-left: 15px;
     width: 100%;
 }
+
 p {
     width: 100%;
 }
@@ -40,55 +44,106 @@ li {
     font-size: 20px;
     margin-top: 10px;
 }
-.commands {
-    color: $dark;
-    margin-left: 15px;
+
+// Menu
+.menu {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: auto;
+    font-weight: 500;
+
+    a {
+        color: $gray;
+    
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
 }
+
+.menu__mobile {
+    a {
+        color: $gray;
+    
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }    
+}
+
+.home {
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+    }
+
+    a {
+        color: $gray;
+        font-weight: 700;
+    
+        &:hover {
+            text-decoration: none;
+            color: $dark;
+        }
+    }
+}
+
 
 // Docs
 .doc {
     height: 80%;
     text-align: justify;
-}
-.doc__title {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-.doc__links {
-    font-weight: 500;
-    font-size: 18px;
-    list-style: none;
-    margin-bottom: 30px;
-}
-.doc__links:hover {
-    list-style: none;    
-}
-.doc__btn {
-    margin-bottom: 20px;
-}
-.doc__introdution {
-    width: 81%;
-    @media (min-width: 640px) {
-        width: 24.5%;
+    
+    .introdution {
+        width: 81%;
+        @media (min-width: 640px) {
+            width: 24.5%;
+        }
     }
-}
-.doc__docs {
-    width: 30%;
-    @media (min-width: 640px) {
-        width: 10.5%;
+    
+    .installation {
+        width: 62%;
+        @media (min-width: 640px) {
+            width: 21.5%;
+        }
     }
-}
-.doc__installation {
-    width: 62%;
-    @media (min-width: 640px) {
-        width: 21.5%;
+    
+    .docs {
+        width: 30%;
+        @media (min-width: 640px) {
+            width: 10.5%;
+        }
     }
-}
-.doc__img {
-    margin-bottom: 5px;
-    width: 95%;
+    
+    img {
+        margin-bottom: 5px;
+        width: 95%;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+
+    a {
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+        list-style: none;
+        margin-bottom: 15px;
+        color: $dark;
+    
+        &:hover {
+            list-style: none;
+            color: $gray;
+            text-decoration: none;  
+        }
+    }
 }
 
 // GitHub
@@ -96,45 +151,4 @@ li {
     bottom: 10px;
     position: fixed;
     right: 10px;
-}
-
-// Home
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-}
-.center__h1 {
-    display: flex;
-    padding-top: 20%;
-    padding-left: 2.5%;
-    height: 33.3vh;
-}
-.menu {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-    height: auto;
-}
-.menu__options{
-    color: $gray;
-}
-.menu__options:hover {
-    color: $dark;
-    text-decoration: none;
-}
-
-
-// Menu for doc
-.brand {
-    margin-top: 20px;
-}
-.link {
-    color: $gray;
-}
-.link:hover {
-    color: $white;
-    text-decoration: none;
 }

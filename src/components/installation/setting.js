@@ -16,7 +16,7 @@ export default function Setting() {
                     <p>
                         If you already download the files, probally you have a folter like this:
                     </p>
-                    <img  alt="folder" className="doc__img" src={folder}/>
+                    <img  alt="folder" src={folder}/>
                     <p>
                         Do you remember that token? We'll need use it now!
                     </p>
@@ -24,11 +24,11 @@ export default function Setting() {
                         Open you index.js file into VS Code (or another IDE) and
                         paste your token replacing the word <strong>"TOKEN"</strong>:
                     </p>
-                    <img  alt="token discord" className="doc__img" src={token_discord}/>
+                    <img  alt="token discord" src={token_discord}/>
                     <p>
                         or in Telegram version:
                     </p>
-                    <img  alt="token telegram" className="doc__img" src={token_telegram}/>
+                    <img  alt="token telegram" src={token_telegram}/>
                     <p>
                         Into you terminal, paste <strong>npm i --save fs cheerio node-url-shortener request</strong> and press enter.
                     </p>

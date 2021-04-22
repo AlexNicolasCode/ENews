@@ -20,7 +20,12 @@ export default function Releases() {
                         That's change helped in the organization of the mensager, 
                         simplifying the content and making a better user experience (UX).
                     </p>
-                    <Button outline className="doc__btn btn-outline-dark rounded-0">Download v2.0</Button>
+                    <a href="https://github.com/AlexNicolasCode/ENews-DiscordBot/releases/tag/v2.0">
+                        <Button outline className="btn-outline-dark rounded-0">ENews Discord v2.0</Button>
+                    </a>
+                    <a href="http://github.com/AlexNicolasCode/ENews-TelegramBot/releases/tag/v2.0">
+                        <Button outline className="btn-outline-dark rounded-0">ENews Telegram v2.0</Button>
+                    </a>
                     <Row tag="h3" className="w-100">v1.0</Row>
                     <p>
                         That's the old and first version of ENews. Originally, 
@@ -30,7 +35,12 @@ export default function Releases() {
                         Here, ENews only get the title and index into Discord and Telegram, 
                         something that has changed the v2.0 version.
                     </p>
-                    <Button outline className="doc__btn btn-outline-dark rounded-0">Download v1.0</Button>
+                    <a href="http://github.com/AlexNicolasCode/ENews-DiscordBot/releases/tag/v1.0">
+                        <Button outline className="btn-outline-dark rounded-0">ENews Discord v1.0</Button>
+                    </a>   
+                    <a href="http://github.com/AlexNicolasCode/ENews-TelegramBot/releases/tag/v1.0">
+                        <Button outline className="btn-outline-dark rounded-0">ENews Telegram v1.0</Button>
+                    </a>   
                 </Row>
             </Container>
         </section>

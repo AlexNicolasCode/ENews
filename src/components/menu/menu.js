@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Logo() {
     return (
         <Row className="pt-3" style={{ height: "30px", width: "30px" }}>
-            <Link to="/" className="link">
+            <Link to="/ENews">
             <div className="ml-3">
                 <svg width="30" height="30" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="200" height="40" fill="#f2f2f2"/>
@@ -24,24 +24,24 @@ const Sections = ({isExpandInstall = false, isExpandDoc = false }) => {
     const [expandDocs, setExpandDocs] = useState(isExpandDoc);
     
     return (
-        <Container className="mt-5 float-left" xs="1">
-            <Row xs="10"><strong><Link to="/introdution" className="link">Introdution</Link></strong></Row>
-            <Row xs="10" className="mt-3" onClick={() => setExpandInstall(expandInstall => !expandInstall)}><strong><Link to="/installation" className="link">Installation</Link></strong></Row>
+        <Container className="menu mt-5 float-left" xs="1">
+            <Row xs="10"><strong><Link to="/ENews/introdution">Introdution</Link></strong></Row>
+            <Row xs="10" className="mt-3" onClick={() => setExpandInstall(expandInstall => !expandInstall)}><strong><Link to="/ENews/installation">Installation</Link></strong></Row>
                 {expandInstall &&
                     <Col xs="5">
-                        <a href="#download" className="link">Download</a><br />
-                        <a href="#install" className="link">Install</a><br />
-                        <a href="#discord" className="link">Discord</a><br />
-                        <a href="#telegram" className="link">Telegram</a><br />
-                        <a href="#setting" className="link">Setting</a><br />
+                        <a href="#download">Download</a><br />
+                        <a href="#install">Install</a><br />
+                        <a href="#discord">Discord</a><br />
+                        <a href="#telegram">Telegram</a><br />
+                        <a href="#setting">Setting</a><br />
                     </Col>
                 }
-            <Row className="mt-3" onClick={() => setExpandDocs(expandDocs => !expandDocs)}><strong><Link to="/docs" className="link">Docs</Link></strong></Row>
+            <Row className="mt-3" onClick={() => setExpandDocs(expandDocs => !expandDocs)}><strong><Link to="/ENews/docs">Docs</Link></strong></Row>
                 {expandDocs &&
                     <Col xs="10">
-                        <a href="#commands" className="link">Commands</a><br />
-                        <a href="#fonts" className="link">Fonts and API's</a><br />
-                        <a href="#releases" className="link">Releases</a><br />
+                        <a href="#commands">Commands</a><br />
+                        <a href="#fonts">Fonts and API's</a><br />
+                        <a href="#releases">Releases</a><br />
                     </Col>
                 }
         </Container>
@@ -66,7 +66,7 @@ export default function Menu() {
 
     return (
         <>
-            <Nav className="d-block sticky-top d-md-none zindex-fixed">
+            <Nav className="menu__mobile d-block sticky-top d-md-none zindex-fixed">
                 { isBtn &&
                     <Button className="bg-dark float-right mt-2 mr-2 p-4 rounded-0" onClick={openMenu}></Button>
                 }
@@ -74,9 +74,9 @@ export default function Menu() {
                 <>
                     <Button className="bg-white float-right mt-2 mr-2 p-4 rounded-0 zindex-modal-backdrop" onClick={closeMenu}></Button>
                     <Container className="bg-dark mr-3 zindex-sticky pt-7" style={{ width: "100%", height: "812px", fontSize: "24px" }}>
-                        <strong><Link to="/introdution" className="link">Introdution</Link></strong><br/>
-                        <strong><Link className="link" to="/installation">Installation</Link></strong><br/>
-                        <strong><Link className="link" to="/docs">Docs</Link></strong>
+                        <strong><Link to="/ENews/introdution">Introdution</Link></strong><br/>
+                        <strong><Link to="/ENews/installation">Installation</Link></strong><br/>
+                        <strong><Link to="/ENews/docs">Docs</Link></strong>
                     </Container>
                 </>
                 }

@@ -16,15 +16,15 @@ export default function Telegram() {
                     <p>
                         To start, you need add BotFather into your Telegram App:
                     </p>
-                    <img  alt="search botfather" className="doc__img" src={search}/>
+                    <img  alt="search botfather" src={search}/>
                     <p>
                         Now, send "/newbot" to him and wait a anwser:
                     </p>
-                    <img  alt="add new bot" className="doc__img" src={newBot}/>
+                    <img  alt="add new bot" src={newBot}/>
                     <p>
                         Then you need give a name and a username for your bot:
                     </p>
-                    <img  alt="add username" className="doc__img" src={userName}/>
+                    <img  alt="add username" src={userName}/>
                     <p>
                         If everything went well, you'll receive a token to access the HTTP API. It's so important to installation, please save it.
                     </p>

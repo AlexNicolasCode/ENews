@@ -6,7 +6,7 @@ import GitHub from '../components/others/github';
 function Brand() {
   return (
     <Container className="d-none bg-dark float-left d-lg-block" style={{ height: '100vh', width: '33.3%'}}>
-        <Row className="center">
+        <Row className="brand">
           <svg width="150" height="150" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="200" height="40" fill="#f2f2f2"/>
             <rect y="160" width="200" height="40" fill="#f2f2f2"/>
@@ -53,11 +53,10 @@ function OptionsMobile() {
   return (
         <Container data-aos="fade-right" data-aos-duration="1600">
           <div className="float-left mt-7" style={{ fontSize: "24px" }}>
-            <Link to="/introdution" className="link menu__options mt-4">About</Link><br/>
-            <Link to="/installation" className="link menu__options mt-4">Install</Link><br/>
-            <Link to="/docs" className="link menu__options mt-4">Docs</Link><br/>
-            <Link to="/installation"className="link menu__options mt-4">Download</Link><br/>
-            <a href="https://github.com/AlexNicolasCode/ENews-DiscordBot" className="link">GitHub</a>
+            <Link to="/ENews/introdution" className="mt-4">About</Link><br/>
+            <Link to="/ENews/installation" className="mt-4">Install</Link><br/>
+            <Link to="/ENews/docs" className="mt-4">Docs</Link><br/>
+            <a href="https://github.com/AlexNicolasCode/ENews-DiscordBot">GitHub</a>
           </div>
         </Container>
   );
@@ -66,28 +65,27 @@ function OptionsMobile() {
 function Options() {
   return (
         <Nav className="d-none float-right mt-2 mr-2 d-md-block" data-aos="fade-right" data-aos-duration="1600">
-          <Link to="/introdution" className="menu__options mt-2 mr-3">About</Link>
-          <Link to="/installation" className="menu__options mt-2 mr-3">Install</Link>
-          <Link to="/docs" className="menu__options mt-2 mr-3">Docs</Link>
-          <Link to="/installation"><Button outline className="btn-outline-dark rounded-0">Download</Button></Link>
+          <Link to="/ENews/introdution" className="mt-2 mr-3">About</Link>
+          <Link to="/ENews/installation" className="mt-2 mr-3">Install</Link>
+          <Link to="/ENews/docs" className="mt-2 mr-3">Docs</Link>
         </Nav>
   );
 }
 
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <GitHub />
       <Options className="d-none d-md-block"/>
       <MenuHome/>
       <Brand />
-      <Container className="align-middle pt-8 align-middle" data-aos="fade-left" data-aos-duration="1600">
+      <Container className="align-middle pt-7 pt-md-8" data-aos="fade-left" data-aos-duration="1600">
         <Row className="pt-4">
           <Col>
             <h1 className="pt-5 pt-md-2"><strong><span style={{ color: '#FF5E5E' }}>ENews</span></strong>: stay always <br />be <strong>informed</strong></h1>
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   )
 }
